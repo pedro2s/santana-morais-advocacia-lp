@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'Regular';
+		src: local('Barlow-Regular'), url(/fonts/Barlow-Regular.ttf) format('truetype');
+	}
+	@font-face {
+		font-family: 'Bold';
+		src: local('Barlow-Bold'), url(/fonts/Barlow-Bold.ttf) format('truetype');
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		font-family: 'Regular';
+	}
+}
+
+@layer components {
+	.headline-1 {
+		@apply text-[50px] leading-[60px] sm:text-[64px] sm:leading-[75px] font-bold uppercase;
+	}
+	.headline-2 {
+		@apply text-[36px] leading-[40px] font-bold uppercase;
+	}
+	.headline-3 {
+		@apply text-[24px] leading-[30px] font-bold uppercase;
+	}
+	.headline-4 {
+		@apply text-[18px] leading-[20px] font-bold uppercase;
+	}
+	.headline-5 {
+		@apply text-[16px] leading-[20px] font-bold uppercase;
+	}
+	.lead-paragraph {
+		@apply text-[24px] leading-[30px] font-normal text-secondary;
+	}
+	.paragraph {
+		@apply text-[18px] leading-[25px] font-normal;
+	}
+	.button {
+		@apply flex items-center gap-1 bg-primary headline-5 text-white p-[20px];
+	}
+}
