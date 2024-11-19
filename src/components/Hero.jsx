@@ -1,5 +1,5 @@
 import heroImg from '../assets/hero.png';
-import chevronRight from '../assets/ic_baseline-chevron-right.svg';
+import ChevronRight from '../assets/ic_baseline-chevron-right.svg?react';
 
 const Hero = () => {
 	return (
@@ -15,9 +15,9 @@ const Hero = () => {
 								seus benefícios de forma ágil e segura.
 							</p>
 						</div>
-						<a href="#" className="button hover:bg-secondary">
+						<a href="https://wa.me/message/KUPNLGIU4BW2G1" className="button hover:bg-secondary">
 							<span>FALE COM UM ESPECIALISTA</span>
-							<img src={chevronRight} alt="" />
+							<ChevronRight />
 						</a>
 					</div>
 					<div className="items-end">

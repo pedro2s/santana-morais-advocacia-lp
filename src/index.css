@@ -46,6 +46,6 @@
 		@apply text-[18px] leading-[25px] font-normal;
 	}
 	.button {
-		@apply flex items-center gap-1 bg-primary headline-5 text-white p-[20px];
+		@apply flex items-center gap-1 bg-primary headline-5 text-white p-[20px] rounded-md;
 	}
 }
