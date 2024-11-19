@@ -1,11 +1,23 @@
 import trabalhoIcon from '../assets/icon-feature-trabalho.svg';
 import previdenciarioIcon from '../assets/icon-feature-previdenciario.svg';
+import { useEffect } from 'react';
 
 const IconFeatures = () => {
+	useEffect(() => {
+		const sr = window.ScrollReveal({
+			origin: 'top',
+			distance: '60px',
+			duration: '2500',
+			delay: 400,
+			// reset: true
+		});
+		sr.reveal('.icon__features');
+	}, []);
+
 	return (
 		<section className="w-full bg-primary">
 			<div className="2xl:max-w-[1440px] mx-auto">
-				<div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 px-3 md:px-8 py-8">
+				<div className="icon__features w-full flex flex-col md:flex-row justify-between items-center gap-6 px-3 md:px-8 py-8">
 					<h2 className="headline-4 md:headline-3 text-white">ÁREAS DE ATUAÇÃO</h2>
 
 					<div className="w-full flex justify-around flex-wrap gap-4">
