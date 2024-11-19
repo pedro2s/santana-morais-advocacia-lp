@@ -22,9 +22,12 @@ const Hero = () => {
 					<div className="hero__data md:max-w-[650px] flex flex-col items-center md:items-start gap-8 text-primary pb-3">
 						<div className="flex flex-col gap-4 text-center md:text-start">
 							<h4 className="headline-5 lg:headline-4">RECEBA O QUE É SEU POR DIREITO</h4>
-							<h1 className="headline-2 lg:headline-1">Especialistas em direito do trabalho</h1>
+							<h1 className="headline-2 lg:headline-1">
+								Especialistas em Direito do Trabalho e Direito Previdenciário
+							</h1>
 							<p className="lead-paragraph text-center md:text-start">
-								Atuamos na defesa dos trabalhadores e na garantia dos direitos previdenciários.
+								Atuamos na defesa dos trabalhadores e na garantia dos direitos previdenciários, ajudando você
+								a conquistar seus benefícios de forma ágil e segura
 							</p>
 						</div>
 						<a href="https://wa.me/message/KUPNLGIU4BW2G1" className="button hover:bg-secondary">
