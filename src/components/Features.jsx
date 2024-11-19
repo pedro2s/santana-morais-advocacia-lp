@@ -1,11 +1,23 @@
+import { useEffect } from 'react';
 import check from '../assets/check.svg';
 
 const Features = () => {
+	useEffect(() => {
+		const sr = window.ScrollReveal({
+			origin: 'top',
+			distance: '60px',
+			duration: '2500',
+			delay: 400,
+			// reset: true
+		});
+		sr.reveal('.direito__previdenciario, .direito__trabalhista');
+	}, []);
+
 	return (
 		<section className="w-full bg-primary">
 			<div className="2xl:max-w-[1440px] mx-auto">
 				<div className="w-full flex flex-col md:flex-row justify-between items-center gap-14 px-3 md:px-8 py-8">
-					<div className="flex flex-col gap-6 text-white">
+					<div className="direito__previdenciario flex flex-col gap-6 text-white">
 						<div className="flex flex-col gap-3">
 							<h5 className="headline-5">Defesa</h5>
 							<h2 className="headline-2">Dos Direitos Previdenciários</h2>
@@ -47,7 +59,7 @@ const Features = () => {
 						</ul>
 					</div>
 
-					<div className="flex flex-col gap-6 text-white">
+					<div className="direito__trabalhista flex flex-col gap-6 text-white">
 						<div className="flex flex-col gap-3">
 							<h5 className="headline-5">Defesa</h5>
 							<h2 className="headline-2">Dos Trabalhadores</h2>

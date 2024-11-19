@@ -5,7 +5,7 @@ const faqs = [
 	{
 		id: 1,
 		header: 'Como agendar uma consulta com a Santana Morais Advocacia?',
-		text: `Entre em contato conosco pelo através dos nossos canais de atendimento. Nossa equipe estará pronta para agendar sua consulta de forma rápida e prática, seja ela presencial ou online.`,
+		text: `Entre em contato conosco através dos nossos canais de atendimento. Nossa equipe estará pronta para agendar sua consulta de forma rápida e prática, seja ela presencial ou online.`,
 	},
 	{
 		id: 2,
