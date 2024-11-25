@@ -1,20 +1,7 @@
-import { useEffect } from 'react';
 import heroImg from '../assets/hero.png';
 import ChevronRight from '../assets/ic_baseline-chevron-right.svg?react';
 
 const Hero = () => {
-	useEffect(() => {
-		const sr = window.ScrollReveal({
-			origin: 'top',
-			distance: '60px',
-			duration: '2500',
-			delay: 400,
-			// reset: true
-		});
-		sr.reveal('.hero__data', { origin: 'left' });
-		sr.reveal('.hero__img', { origin: 'right' });
-	}, []);
-
 	return (
 		<section className="w-fful bg-white mt-16">
 			<div className="2xl:max-w-[1440px] mx-auto">

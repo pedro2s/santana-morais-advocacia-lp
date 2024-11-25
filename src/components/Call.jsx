@@ -1,18 +1,6 @@
-import { useEffect } from 'react';
 import ChevronRight from '../assets/ic_baseline-chevron-right.svg?react';
 
 const Call = () => {
-	useEffect(() => {
-		const sr = window.ScrollReveal({
-			origin: 'top',
-			distance: '60px',
-			duration: '2500',
-			delay: 400,
-			// reset: true
-		});
-		sr.reveal('.call', { interval: 100 });
-	}, []);
-
 	return (
 		<section className="w-fful bg-primary mt-16">
 			<div className="2xl:max-w-[1440px] mx-auto">

@@ -12,7 +12,7 @@
 		src: local('Barlow-Bold'), url(/fonts/Barlow-Bold.ttf) format('truetype');
 	}
 
-	* {
+	*,html,body {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;

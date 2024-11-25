@@ -1,18 +1,6 @@
-import { useEffect } from 'react';
 import check from '../assets/check.svg';
 
 const Features = () => {
-	useEffect(() => {
-		const sr = window.ScrollReveal({
-			origin: 'top',
-			distance: '60px',
-			duration: '2500',
-			delay: 400,
-			// reset: true
-		});
-		sr.reveal('.direito__previdenciario, .direito__trabalhista');
-	}, []);
-
 	return (
 		<section className="w-full bg-primary">
 			<div className="2xl:max-w-[1440px] mx-auto">

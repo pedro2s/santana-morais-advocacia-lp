@@ -1,20 +1,7 @@
 import flavioImg from '../assets/flavio.png';
 import carolineImg from '../assets/caroline.png';
-import { useEffect } from 'react';
 
 const Especialistas = () => {
-	useEffect(() => {
-		const sr = window.ScrollReveal({
-			origin: 'top',
-			distance: '60px',
-			duration: '2500',
-			delay: 400,
-			// reset: true
-		});
-		sr.reveal('.especialista__caroline', { origin: 'left' });
-		sr.reveal('.especialista__flavio', { origin: 'right' });
-	}, []);
-
 	return (
 		<section className="w-full bg-white my-14">
 			<div className="2xl:max-w-[1440px] mx-auto">

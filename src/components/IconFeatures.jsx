@@ -1,19 +1,7 @@
 import trabalhoIcon from '../assets/icon-feature-trabalho.svg';
 import previdenciarioIcon from '../assets/icon-feature-previdenciario.svg';
-import { useEffect } from 'react';
 
 const IconFeatures = () => {
-	useEffect(() => {
-		const sr = window.ScrollReveal({
-			origin: 'top',
-			distance: '60px',
-			duration: '2500',
-			delay: 400,
-			// reset: true
-		});
-		sr.reveal('.icon__features');
-	}, []);
-
 	return (
 		<section className="w-full bg-primary">
 			<div className="2xl:max-w-[1440px] mx-auto">
