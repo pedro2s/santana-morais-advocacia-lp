@@ -42,8 +42,8 @@ jobs:
                   name: production-files
                   path: ./dist
 
-            - name: Add CNAME
-              run: echo "santanamoraisadvocacia.com.br" > ./dist/CNAME
+            # - name: Add CNAME
+            #   run: echo "santanamoraisadvocacia.com.br" > ./dist/CNAME
 
             - name: Deploy to GitHub Pages
               uses: peaceiris/actions-gh-pages@v3
