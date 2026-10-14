@@ -13,14 +13,20 @@ const Especialistas = () => {
 								<h5 className="headline-5">Especialista</h5>
 								<h2 className="headline-2">Flávio Santana</h2>
 							</div>
-							<p className="paragraph text-justify">
-								Formado em Direito pela Universidade Anhanguera de São Paulo e pós-graduado em Direito do
-								Trabalho e Processo do Trabalho, Curso de Especialização em Direito Previdenciário, com mais
-								de 5 anos de experiência na advocacia. Flávio busca constantemente oferecer um atendimento
-								focado em resultados e no bem-estar de seus clientes, ele conduz cada caso com o máximo de
-								cuidado e atenção, sempre comprometido com as necessidades daqueles que confiam em seu
-								trabalho.
-							</p>
+							<div className="flex flex-col gap-3">
+								<p className="paragraph text-justify">
+									Bacharel em Direito pela Universidade Anhanguera de São Paulo, pós-graduado em Direito do
+									Trabalho e Processo do Trabalho e especialização em Direito Previdenciário, Flávio alia
+									conhecimento técnico e dedicação para oferecer uma atuação jurídica estratégica, ética e
+									personalizada.
+								</p>
+								<p className="paragraph text-justify">
+									Seu trabalho é pautado pela análise cuidadosa de cada caso, pela transparência na
+									orientação jurídica e pelo compromisso em buscar as melhores soluções legais para cada
+									cliente. Com atendimento humanizado e atenção individualizada, conduz cada demanda com
+									responsabilidade, seriedade e respeito aos direitos de quem confia em seu trabalho.
+								</p>
+							</div>
 						</div>
 					</div>
 					<div className="especialista__caroline flex flex-col md:flex-row-reverse justify-between items-center gap-14 text-primary">
@@ -30,13 +36,20 @@ const Especialistas = () => {
 								<h5 className="headline-5">Especialista</h5>
 								<h2 className="headline-2">CAROLINA MORAIS</h2>
 							</div>
-							<p className="paragraph text-justify">
-								Formada em Direito pela Universidade Nove de Julho, possui mais de 5 anos de experiência na
-								advocacia, atuando tanto no setor público quanto privado. Com uma paixão nata pela oratória e
-								persuasão, Carolina descobriu na advocacia uma verdadeira vocação: defender direitos e
-								promover o acesso à Justiça. Pós-graduada em Direito e Processo do Trabalho, Carolina oferece
-								um atendimento personalizado e focado em soluções eficazes para cada cliente.
-							</p>
+							<div className="flex flex-col gap-3">
+								<p className="paragraph text-justify">
+									Bacharel em Direito pela Universidade Nove de Julho e pós-graduada em Direito e Processo do
+									Trabalho, Carolina reúne conhecimento jurídico e vivência nos setores público e privado,
+									ampliando sua compreensão sobre os desafios e as necessidades de cada demanda.
+								</p>
+								<p className="paragraph text-justify">
+									Com forte aptidão para a oratória e a argumentação jurídica, encontrou na advocacia sua
+									verdadeira vocação: defender direitos, buscar soluções jurídicas adequadas e contribuir
+									para o acesso à Justiça. Sua atuação é pautada pela ética, pela responsabilidade e pelo
+									atendimento personalizado, com análise criteriosa de cada caso e compromisso com os
+									interesses de seus clientes.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
