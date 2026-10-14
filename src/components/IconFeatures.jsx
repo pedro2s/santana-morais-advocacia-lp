@@ -3,7 +3,7 @@ import previdenciarioIcon from '../assets/icon-feature-previdenciario.svg';
 
 const IconFeatures = () => {
 	return (
-		<section className="w-full bg-primary">
+		<section id="areas" className="w-full bg-primary">
 			<div className="2xl:max-w-[1440px] mx-auto">
 				<div className="icon__features w-full flex flex-col md:flex-row justify-between items-center gap-6 px-3 md:px-8 py-8">
 					<h2 className="headline-4 md:headline-3 text-white">ÁREAS DE ATUAÇÃO</h2>
