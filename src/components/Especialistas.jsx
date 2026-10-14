@@ -1,5 +1,5 @@
-import flavioImg from '../assets/flavio.png';
-import carolineImg from '../assets/caroline.png';
+import flavioImg from '../assets/especialista_flavio.webp';
+import carolineImg from '../assets/especialista_caroline.webp';
 
 const Especialistas = () => {
 	return (
@@ -10,10 +10,10 @@ const Especialistas = () => {
 						<img
 								src={flavioImg}
 								alt="Flávio Santana"
-								width={250}
-								height={250}
+								width={280}
+								height={350}
 								loading="lazy"
-								className="shrink-0 w-[250px] h-[250px] object-cover rounded-2xl border-4 border-accent"
+								className="shrink-0 w-[280px] h-[350px] object-cover object-top rounded-2xl border-4 border-accent"
 							/>
 						<div className="flex flex-col gap-5">
 							<div className="flex flex-col gap-3">
@@ -40,10 +40,10 @@ const Especialistas = () => {
 						<img
 								src={carolineImg}
 								alt="Carolina Morais"
-								width={250}
-								height={250}
+								width={280}
+								height={350}
 								loading="lazy"
-								className="shrink-0 w-[250px] h-[250px] object-cover rounded-2xl border-4 border-accent"
+								className="shrink-0 w-[280px] h-[350px] object-cover object-top rounded-2xl border-4 border-accent"
 							/>
 						<div className="flex flex-col gap-5">
 							<div className="flex flex-col gap-3">
