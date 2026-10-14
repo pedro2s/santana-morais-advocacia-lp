@@ -7,16 +7,19 @@ import Call from './components/Call';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 import Faq from './components/Faq';
+import WhatsAppFloat from './components/WhatsAppFloat';
 import { useEffect } from 'react';
 
 function App() {
 	useEffect(() => {
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
 		const sr = window.ScrollReveal({
 			origin: 'top',
 			distance: '10px',
-			duration: '2500',
-			delay: 400,
-			reset: true
+			duration: 800,
+			delay: 100,
+			reset: false
 		});
 		sr.reveal('.hero__data, .especialista__caroline', { origin: 'left' });
 		sr.reveal('.hero__img, .especialista__flavio', { origin: 'right' });
@@ -36,6 +39,7 @@ function App() {
 			<Contacts />
 			<Faq />
 			<Footer />
+			<WhatsAppFloat />
 		</>
 	);
 }

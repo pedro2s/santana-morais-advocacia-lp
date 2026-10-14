@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import ChevronDown from '../assets/chevron-down.svg?react';
 
 const faqs = [
@@ -24,23 +24,37 @@ const faqs = [
 	},
 ];
 
-const AccordionItem = (props) => {
-	const contentEl = useRef();
-	const { handleToggle, active, faq } = props;
+const AccordionItem = ({ handleToggle, active, faq }) => {
 	const { header, id, text } = faq;
+	const open = active === id;
 
 	return (
-		<div className="relative w-full flex flex-col gap-3 border-b py-3 my-2 text-white">
+		<div className="w-full border-b border-white/30 py-3 text-white">
+			<h5>
+				<button
+					type="button"
+					id={`faq-btn-${id}`}
+					aria-expanded={open}
+					aria-controls={`faq-panel-${id}`}
+					onClick={() => handleToggle(id)}
+					className="headline-5 w-full flex justify-between items-center gap-4 py-2 text-left rounded-md outline-none focus-visible:ring-4 focus-visible:ring-accent"
+				>
+					<span>{header}</span>
+					<ChevronDown
+						aria-hidden="true"
+						className={`shrink-0 w-5 h-5 text-accent transition-transform duration-300 ${open ? 'rotate-180' : ''}`}
+					/>
+				</button>
+			</h5>
 			<div
-				className={`w-full flex justify-between items-center ${active === id ? 'active' : ''}`}
-				onClick={() => handleToggle(id)}
+				id={`faq-panel-${id}`}
+				role="region"
+				aria-labelledby={`faq-btn-${id}`}
+				aria-hidden={!open}
+				className={`grid transition-[grid-template-rows] duration-300 ${open ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}
 			>
-				<h5 className="headline-5">{header}</h5>
-				<ChevronDown className={`w-5 h-5 text-gray-500 ${active === id && 'transform rotate-180'}`} />
-			</div>
-			<div ref={contentEl} className={`w-full ${active === id ? 'flex' : 'hidden'}`}>
-				<div className="">
-					<p className="mb-0">{text}</p>
+				<div className="overflow-hidden">
+					<p className="pt-3 pb-2 text-soft">{text}</p>
 				</div>
 			</div>
 		</div>
@@ -60,11 +74,11 @@ const Faq = () => {
 
 	return (
 		<>
-			<section className="w-fful bg-primary mt-16">
+			<section className="w-full bg-primary border-t border-white/15">
 				<div className="2xl:max-w-[1440px] mx-auto">
-					<div className="w-full flex flex-col items-center px-3 md:px-8 py-16 gap-8">
-						{faqs.map((faq, index) => {
-							return <AccordionItem key={index} active={active} handleToggle={handleToggle} faq={faq} />;
+					<div className="w-full max-w-[900px] mx-auto flex flex-col items-center px-3 md:px-8 py-16 gap-2">
+						{faqs.map((faq) => {
+							return <AccordionItem key={faq.id} active={active} handleToggle={handleToggle} faq={faq} />;
 						})}
 					</div>
 				</div>
